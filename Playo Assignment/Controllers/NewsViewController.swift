@@ -48,6 +48,23 @@ class NewsViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "GoToWebView", sender: self)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToWebView"{
+            
+            let destinationVC = segue.destination as! WebViewViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            print(self.brain.newsData[selectedIndexPath.row].url)
+            DispatchQueue.main.async {
+                destinationVC.urlForWebView = self.brain.newsData[selectedIndexPath.row].url
+            
+            }
+                    }
+        
+        }
 
 
 

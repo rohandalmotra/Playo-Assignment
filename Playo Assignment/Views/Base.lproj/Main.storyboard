@@ -104,6 +104,14 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="naO-Lg-eIx">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0vA-yv-b2j"/>
+                                    <constraint firstAttribute="height" constant="60" id="KGP-cT-ckG"/>
+                                </constraints>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Taf-KX-BpX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -112,10 +120,13 @@
                             <constraint firstItem="Taf-KX-BpX" firstAttribute="trailing" secondItem="LjL-K5-3Ld" secondAttribute="trailing" id="9c9-rQ-TfU"/>
                             <constraint firstItem="LjL-K5-3Ld" firstAttribute="leading" secondItem="Taf-KX-BpX" secondAttribute="leading" id="Pei-i6-B4J"/>
                             <constraint firstItem="LjL-K5-3Ld" firstAttribute="bottom" secondItem="Taf-KX-BpX" secondAttribute="bottom" id="Ph2-0J-6H9"/>
+                            <constraint firstItem="naO-Lg-eIx" firstAttribute="centerY" secondItem="Zh4-UB-Ea9" secondAttribute="centerY" id="UM0-Ia-V1O"/>
+                            <constraint firstItem="naO-Lg-eIx" firstAttribute="centerX" secondItem="Zh4-UB-Ea9" secondAttribute="centerX" id="fvV-Cl-lec"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jCn-K1-sbs"/>
                     <connections>
+                        <outlet property="loader" destination="naO-Lg-eIx" id="wFI-4f-XMw"/>
                         <outlet property="webView" destination="LjL-K5-3Ld" id="lvO-le-XxR"/>
                     </connections>
                 </viewController>
@@ -145,6 +156,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
