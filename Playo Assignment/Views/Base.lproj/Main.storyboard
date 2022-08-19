@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FI4-Vl-mSG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="Qov-8y-Y2s">
+            <objects>
+                <tableViewController id="FI4-Vl-mSG" customClass="NewsViewController" customModule="Playo_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="N5n-Lx-aJO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NewsItem" rowHeight="140" id="BjO-bj-54o" customClass="CustomTableViewCell" customModule="Playo_Assignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BjO-bj-54o" id="qFT-2s-4AD">
+                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="140"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nLk-uR-fis">
+                                            <rect key="frame" x="20" y="11" width="95" height="95"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="95" id="6jD-gB-d3s"/>
+                                                <constraint firstAttribute="height" constant="95" id="QAh-EZ-aSK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wq-pj-Xzn">
+                                            <rect key="frame" x="21" y="109" width="95" height="20"/>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTw-cT-ZI6">
+                                            <rect key="frame" x="125" y="11" width="252.5" height="18"/>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tv-Od-8Kh">
+                                            <rect key="frame" x="125" y="39" width="260.5" height="101"/>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nLk-uR-fis" firstAttribute="top" secondItem="qFT-2s-4AD" secondAttribute="topMargin" id="0qx-Rx-pJy"/>
+                                        <constraint firstItem="9wq-pj-Xzn" firstAttribute="leading" secondItem="qFT-2s-4AD" secondAttribute="leadingMargin" constant="1" id="4n4-jE-Skt"/>
+                                        <constraint firstItem="nLk-uR-fis" firstAttribute="leading" secondItem="qFT-2s-4AD" secondAttribute="leadingMargin" id="5ny-Va-yvt"/>
+                                        <constraint firstItem="9wq-pj-Xzn" firstAttribute="top" secondItem="nLk-uR-fis" secondAttribute="bottom" constant="3" id="8N0-r1-jZq"/>
+                                        <constraint firstItem="9tv-Od-8Kh" firstAttribute="leading" secondItem="nLk-uR-fis" secondAttribute="trailing" constant="10" id="FQz-p5-w8U"/>
+                                        <constraint firstItem="9wq-pj-Xzn" firstAttribute="bottom" secondItem="qFT-2s-4AD" secondAttribute="bottomMargin" id="FqN-me-SN2"/>
+                                        <constraint firstAttribute="bottom" secondItem="9tv-Od-8Kh" secondAttribute="bottom" id="Gf9-Ha-74r"/>
+                                        <constraint firstItem="VTw-cT-ZI6" firstAttribute="top" secondItem="qFT-2s-4AD" secondAttribute="topMargin" id="Ki9-ki-FLl"/>
+                                        <constraint firstItem="9tv-Od-8Kh" firstAttribute="top" secondItem="VTw-cT-ZI6" secondAttribute="bottom" constant="10" id="L87-cl-K05"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VTw-cT-ZI6" secondAttribute="trailing" id="ZYH-Kx-GHf"/>
+                                        <constraint firstItem="VTw-cT-ZI6" firstAttribute="leading" secondItem="nLk-uR-fis" secondAttribute="trailing" constant="10" id="g04-IZ-nCF"/>
+                                        <constraint firstAttribute="trailing" secondItem="9tv-Od-8Kh" secondAttribute="trailing" id="ijF-aI-Lds"/>
+                                        <constraint firstItem="9tv-Od-8Kh" firstAttribute="leading" secondItem="9wq-pj-Xzn" secondAttribute="trailing" constant="9" id="uEK-EC-wBA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FI4-Vl-mSG" id="xiv-j4-nHw"/>
+                            <outlet property="delegate" destination="FI4-Vl-mSG" id="UCS-1x-tmh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOc-Jc-66y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740.57971014492762" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
