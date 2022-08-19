@@ -29,11 +29,26 @@ class NewsViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsItem", for: indexPath) as! CustomTableViewCell
-       
-        cell.textLabel?.text = brain.newsData[indexPath.row].title
+        cell.titleLabel.text = brain.newsData[indexPath.row].title
+        cell.descriptionLabel.text = brain.newsData[indexPath.row].description
+        cell.userName.text = brain.newsData[indexPath.row].author
+        performRequestForImage()
         
+        
+        func performRequestForImage(){
+            let urlString = brain.newsData[indexPath.row].urlToImage
+            let url = URL(string: urlString)
+            if let data = try? Data(contentsOf: url!)
+            {
+                let image: UIImage = UIImage(data: data)!
+                cell.userImage.image = image
+            }
+            
+        }
         return cell
     }
+    
+
 
 
 }
