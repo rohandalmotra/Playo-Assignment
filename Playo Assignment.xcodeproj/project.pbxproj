@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B40984228AFCF2D00C9706B /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40984128AFCF2D00C9706B /* WebViewViewController.swift */; };
 		4B93D16A28AF92E4003A19C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D16928AF92E4003A19C2 /* AppDelegate.swift */; };
 		4B93D16C28AF92E4003A19C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D16B28AF92E4003A19C2 /* SceneDelegate.swift */; };
 		4B93D16E28AF92E4003A19C2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D16D28AF92E4003A19C2 /* NewsViewController.swift */; };
@@ -17,10 +16,10 @@
 		4B93D17E28AF9844003A19C2 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D17D28AF9844003A19C2 /* Brain.swift */; };
 		4B93D18028AF98D8003A19C2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D17F28AF98D8003A19C2 /* DataModel.swift */; };
 		4B93D18928AFC87C003A19C2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D18828AFC87C003A19C2 /* CustomTableViewCell.swift */; };
+		4B9BF8B928AFECA90017A019 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BF8B828AFECA90017A019 /* WebViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B40984128AFCF2D00C9706B /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		4B93D16628AF92E4003A19C2 /* Playo Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playo Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B93D16928AF92E4003A19C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B93D16B28AF92E4003A19C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		4B93D17D28AF9844003A19C2 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		4B93D17F28AF98D8003A19C2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4B93D18828AFC87C003A19C2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		4B9BF8B828AFECA90017A019 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4B93D16D28AF92E4003A19C2 /* NewsViewController.swift */,
-				4B40984128AFCF2D00C9706B /* WebViewViewController.swift */,
+				4B9BF8B828AFECA90017A019 /* WebViewViewController.swift */,
 				4B93D18828AFC87C003A19C2 /* CustomTableViewCell.swift */,
 			);
 			path = Controllers;
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B40984228AFCF2D00C9706B /* WebViewViewController.swift in Sources */,
+				4B9BF8B928AFECA90017A019 /* WebViewViewController.swift in Sources */,
 				4B93D18928AFC87C003A19C2 /* CustomTableViewCell.swift in Sources */,
 				4B93D18028AF98D8003A19C2 /* DataModel.swift in Sources */,
 				4B93D16E28AF92E4003A19C2 /* NewsViewController.swift in Sources */,
