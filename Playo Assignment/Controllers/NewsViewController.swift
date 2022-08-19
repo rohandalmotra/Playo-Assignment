@@ -28,9 +28,10 @@ class NewsViewController: UITableViewController {
         
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsItem", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsItem", for: indexPath) as! CustomTableViewCell
        
         cell.textLabel?.text = brain.newsData[indexPath.row].title
+        
         return cell
     }
 
