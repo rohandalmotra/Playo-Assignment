@@ -17,6 +17,7 @@
 		4B93D18028AF98D8003A19C2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D17F28AF98D8003A19C2 /* DataModel.swift */; };
 		4B93D18928AFC87C003A19C2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93D18828AFC87C003A19C2 /* CustomTableViewCell.swift */; };
 		4B9BF8B928AFECA90017A019 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BF8B828AFECA90017A019 /* WebViewViewController.swift */; };
+		4BEB259728B07AA9006228A0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEB259628B07AA9006228A0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4B93D17F28AF98D8003A19C2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4B93D18828AFC87C003A19C2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4B9BF8B828AFECA90017A019 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		4BEB259628B07AA9006228A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEB259728B07AA9006228A0 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,7 @@
 			children = (
 				4B93D16828AF92E4003A19C2 /* Playo Assignment */,
 				4B93D16728AF92E4003A19C2 /* Products */,
+				4BEB259528B07AA9006228A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +105,14 @@
 				4B93D18828AFC87C003A19C2 /* CustomTableViewCell.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4BEB259528B07AA9006228A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BEB259628B07AA9006228A0 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

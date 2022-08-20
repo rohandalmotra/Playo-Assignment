@@ -6,15 +6,12 @@
 //
 
 import UIKit
-//protocol NewsViewControllerDelegate{
-//  func didUpdateURL(urlString: String)
-//
-//}
+
 
 class NewsViewController: UITableViewController {
     
     let brain = Brain()
-//    var delegate: NewsViewControllerDelegate?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,21 +52,20 @@ class NewsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "GoToWebView", sender: self)
-//        let selectedIndexPath = tableView.indexPathForSelectedRow!
-//        delegate?.didUpdateURL(urlString:  self.brain.newsData[selectedIndexPath.row].url)
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToWebView"{
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            let destinationVC = segue.destination as! WebViewViewController
+
+            DispatchQueue.main.async {
+                destinationVC.url = self.brain.newsData[selectedIndexPath.row].url
+
+            }
+                    }
         
-    }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "GoToWebView"{
-//            let destinationVC = segue.destination as! WebViewViewController
-//            let selectedIndexPath = tableView.indexPathForSelectedRow!
-//            DispatchQueue.main.async {
-//                delegate?.didUpdateURL(urlString:  self.brain.newsData[selectedIndexPath.row].url)
-//            
-//            }
-//                    }
-//        
-//        }
+        }
 
 
 
