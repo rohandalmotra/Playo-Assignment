@@ -51,22 +51,13 @@ class NewsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "GoToWebView", sender: self)
+        let selectedIndexPath = tableView.indexPathForSelectedRow!
+        let urlString = URL(string: brain.newsData[selectedIndexPath.row].url)!
+        let destinationVC = WebViewViewController(url: urlString)
+        let navVC = UINavigationController(rootViewController: destinationVC)
+        present(navVC, animated: true)
 
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToWebView"{
-            let selectedIndexPath = tableView.indexPathForSelectedRow!
-            let destinationVC = segue.destination as! WebViewViewController
-
-            DispatchQueue.main.async {
-                destinationVC.url = self.brain.newsData[selectedIndexPath.row].url
-
-            }
-                    }
-        
-        }
-
+    }
 
 
 }
