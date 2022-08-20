@@ -79,7 +79,6 @@
                             <outlet property="delegate" destination="FI4-Vl-mSG" id="UCS-1x-tmh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4Rd-uZ-nRK"/>
                     <connections>
                         <segue destination="JBB-S8-76c" kind="show" identifier="GoToWebView" id="X16-m1-yxL"/>
                     </connections>
@@ -98,7 +97,6 @@
                         <viewLayoutGuide key="safeArea" id="Taf-KX-BpX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jCn-K1-sbs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjO-8N-8Tn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
