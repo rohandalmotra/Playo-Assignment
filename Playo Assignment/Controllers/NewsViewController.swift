@@ -6,25 +6,22 @@
 //
 
 import UIKit
-
-
 class NewsViewController: UITableViewController {
-    
     let brain = Brain()
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         brain.performRequest{data in
             self.brain.newsData = data
-            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
-
+        
     }
+    
+    //MARK:- TableViewDelegate and DataSource
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return brain.newsData.count
         
@@ -56,9 +53,9 @@ class NewsViewController: UITableViewController {
         let destinationVC = WebViewViewController(url: urlString)
         let navVC = UINavigationController(rootViewController: destinationVC)
         present(navVC, animated: true)
-
+        
     }
-
-
+    
+    
 }
 

@@ -131,6 +131,8 @@
 			dependencies = (
 			);
 			name = "Playo Assignment";
+			packageProductDependencies = (
+			);
 			productName = "Playo Assignment";
 			productReference = 4B93D16628AF92E4003A19C2 /* Playo Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +161,8 @@
 				Base,
 			);
 			mainGroup = 4B93D15D28AF92E4003A19C2;
+			packageReferences = (
+			);
 			productRefGroup = 4B93D16728AF92E4003A19C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
